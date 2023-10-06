@@ -9,7 +9,7 @@ public class TicTacToe {
     }
     public static void main(String []args){
         Scanner s = new Scanner(System.in);
-        System.out.println("h for human player, s for smart AI, d for dumb AI.");
+        System.out.println("h for human player,\ns for smart AI,\nd for dumb AI,\np for perfect AI,\nr for random AI.");
         System.out.print("Player 1: ");
         String p1 = s.nextLine();
         System.out.print("Player 2: ");

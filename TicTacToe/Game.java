@@ -12,22 +12,34 @@ public class Game {
             case "h" :
                 this.p1 = new HumanPlayer(Globals.X);
                 break;
-            case "s":
+            case "s" :
                 this.p1 = new SmartAIPlayer(Globals.X);
+                break;
+            case "p":
+                this.p1 = new PerfectAIPlayer(Globals.X);
                 break;
             case "d":
                 this.p1 = new DumbAIPlayer(Globals.X);
+                break;
+            case "r":
+                this.p1 = new RandomAIPlayer(Globals.X);
         }
         p1Is = p1;
         switch(p2){
             case "h":
                 this.p2 = new HumanPlayer(Globals.O);
                 break;
-            case "s":
+            case "s" :
                 this.p2 = new SmartAIPlayer(Globals.O);
+                break;
+            case "p":
+                this.p2 = new PerfectAIPlayer(Globals.O);
                 break;
             case "d":
                 this.p2 = new DumbAIPlayer(Globals.O);
+                break;
+            case "r":
+                this.p2 = new RandomAIPlayer(Globals.O);
         }
         p2Is = p2;
         /* System.out.println(this.p1);
