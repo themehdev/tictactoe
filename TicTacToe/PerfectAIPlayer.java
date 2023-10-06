@@ -23,7 +23,7 @@ public class PerfectAIPlayer extends IPlayer{
         int line = 0;
         int[] toWin = new int[3];
         //int[] placeholder = new int[3];
-        int[][] trapPos = {{0, 8, 1}, {2, 6, 1}, {1, 3, 2}, {1, 5, 8}, {3, 7, 0}, {5, 7, 6}};
+        int[][] trapPos = {{0, 8, 1}, {2, 6, 1}, {1, 3, 2}, {1, 5, 8}, {3, 7, 0}, {5, 7, 6}, {1, 6, 0}, {4, 3, 0}, {1, 8, 2}, {0, 5, 2}, {0, 7, 6}, {3, 8, 6}, {7, 2, 8}, {5, 6, 8}};
         for(int i = 0; i < board.winningPos.length; i ++){
             line = 0;
             toWin = new int[]{board.winningPos[i][0], board.winningPos[i][1], board.winningPos[i][2]};
@@ -95,7 +95,7 @@ public class PerfectAIPlayer extends IPlayer{
         /* if((board.state[0] == -1 * peice && board.state[8] == -1 * peice)||(board.state[2] == -1 * peice && board.state[6] == -1 * peice) && board.state[1] == Globals.BLANK){
             return 1;
         } */
-        /* if(board.state[0] == 0){
+        if(board.state[0] == 0){
             return 0;
         }
         if(board.state[2] == 0){
@@ -106,7 +106,7 @@ public class PerfectAIPlayer extends IPlayer{
         }
         if(board.state[8] == 0){
             return 8;
-        } */
+        } 
         /* for(int k = 0; k < possibles.length; k ++){
             if(possibles[k] == 1){
                 return 1;
